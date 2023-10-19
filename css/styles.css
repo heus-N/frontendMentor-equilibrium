@@ -51,7 +51,7 @@ p{
 
 .container{
     background: cyan;
-    border-radius: 15px;
+    border-radius: 10px;
     max-width: 299px;
     max-height: 299px;
 }
