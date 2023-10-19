@@ -1,0 +1,156 @@
+:root{
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --very-dark-blueBG: hsl(217, 54%, 11%);   /* MAIN BG */
+    --very-dark-blueCBG: hsl(216, 50%, 16%);  /* CARD BG */
+    --very-dark-blueL: hsl(215, 32%, 27%);    /* LINE */
+    --white: hsl(0, 0%, 100%);
+
+}
+
+*{
+    margin: 0;
+    background-color: var(--very-dark-blueBG);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-size: 20px;
+    font-family: "Outfit";
+    font-weight: 600;
+    color: var(--white);
+}
+
+.card{
+    position: relative;
+    background-color: var(--very-dark-blueCBG);
+    margin: auto;
+    margin-top: 5%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 3px 15px rgba(1, 1, 17, 0.1);
+}
+
+.first-div{
+    background: none;
+    padding: 10px 0px 10px 0px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+p{
+    background: none;
+    color: var(--soft-blue);
+}
+
+.container{
+    background: cyan;
+    border-radius: 15px;
+    max-width: 299px;
+    max-height: 299px;
+}
+
+.icon-view{
+    background: none;
+    position: absolute;
+    top: 26%;
+    left: 44%; 
+    z-index: 1;
+}
+
+.image-equilibrium{
+    position: relative;
+    max-width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.image-equilibrium:hover{
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.soft-blue{
+    color: var(--soft-blue);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.soft-blue-text{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.soft-text{
+    margin-top: 15px;
+}
+
+.white-text{
+    color: var(--white);
+}
+
+.white-text:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.cyan-text{
+    color: var(--cyan);
+}
+
+.inner-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    padding: 0px 0px 10px 0px;
+}
+
+.inner-div img{
+    background: none;
+}
+
+.inner-div p{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.avatar {
+    display: flex;
+    background: none;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0px 0px 0px;
+}
+
+.avatar img{
+    max-width: 30px;
+    border: solid 1px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.avatar p{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+hr {
+    border-bottom: 1px solid var(--very-dark-blueL);
+  }
+
+.attribution{
+    font-family: "Outfit";
+    font-size: 8px;
+    position: absolute;
+    font-weight: 100;
+    left: 1%;
+    bottom: 1%;
+}

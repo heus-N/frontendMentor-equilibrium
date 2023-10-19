@@ -1,0 +1,13 @@
+@media (max-width: 375px){
+
+    .card{
+        margin-top: 15%;
+        padding: 20px;
+        
+    }
+
+    .container{
+        max-width: 299px;
+        max-height: 299px;
+    }
+}
