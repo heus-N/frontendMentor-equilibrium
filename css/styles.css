@@ -13,13 +13,10 @@
 *{
     margin: 0;
     background-color: var(--very-dark-blueBG);
-    
 }
 
 main{
     position: fixed;
-    top: 0;
-    left: 0;
     min-width: 100vw;
     height: 100vh;
 }
@@ -27,30 +24,9 @@ main{
 body{
     height: 100vh;
     width: 100vw;
-    font-size: 20px;
     font-family: "Outfit";
     font-weight: 600;
     color: var(--white);
-}
-
-.card{
-    position: relative;
-    background-color: var(--very-dark-blueCBG);
-    margin: auto;
-    margin-top: 5%;
-    max-width: 300px;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0px 15px 3px 15px rgba(1, 1, 17, 0.1);
-}
-
-.first-div{
-    background: none;
-    padding: 10px 0px 10px 0px;
-}
-
-.pointer {
-    cursor: pointer;
 }
 
 p{
@@ -59,21 +35,29 @@ p{
 }
 
 .container{
+    position: relative;
+    background-color: var(--very-dark-blueCBG);
+    margin: auto;
+    margin-top: 5%;
+    max-width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 3px 15px rgba(1, 1, 17, 0.1);
+    
+}
+
+/* CONTEUDO .card COM FUNDO EM CYAN PARA APARECER EM EFEITO DE HOVER. A IMAGEM GANHA OPACIDADE MOSTRANDO O FUNDO EM CYAN */
+.card{
     background: cyan;
     border-radius: 10px;
     max-width: 299px;
     max-height: 299px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon-view{
-    background: none;
-    position: absolute;
-    top: 26%;
-    left: 44%; 
-    z-index: 1;
-}
-
-.image-equilibrium{
+.card__img{
     position: relative;
     max-width: 300px;
     border-radius: 10px;
@@ -81,57 +65,87 @@ p{
     z-index: 2;
 }
 
-.image-equilibrium:hover{
+.card__img:hover{
     opacity: 0.4;
     z-index: 0;
 }
 
-.soft-blue{
-    color: var(--soft-blue);
-    font-size: 18px;
-    font-weight: 300;
+.card__view__icon{
+    cursor: pointer;
+    background: none;
+    position: absolute;
 }
 
-.soft-blue-text{
-    margin-top: 25px;
-    margin-bottom: 15px;
+.content{
+    background: none;
+    padding: 10px 0px 10px 0px;
 }
 
-.soft-text{
-    margin-top: 15px;
-}
-
-.white-text{
+.content__name{
+    font-size: 1.25em;
     color: var(--white);
 }
 
-.white-text:hover{
+.content__name:hover{
     color: var(--cyan);
     cursor: pointer;
 }
 
-.cyan-text{
-    color: var(--cyan);
+.content__description{
+    color: var(--soft-blue);
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
-.inner-div{
+.nft_data{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: none;
     padding: 0px 0px 10px 0px;
-}
-
-.inner-div img{
-    background: none;
-}
-
-.inner-div p{
     font-weight: 300;
     font-size: 13px;
 }
 
-.avatar {
+.nft_data__icon, .nft_data__clock{
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.nft_data__icon{
+    justify-content: left;
+}
+
+.nft_data__clock{
+    justify-content: right;
+}
+
+.nft_data__icon img, .nft_data__clock img{
+    background: none;
+}
+
+.nft_data__icon p{
+    font-size: 1.25em;
+    color: var(--cyan);
+}
+
+.nft_data__clock p{
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+hr {
+    border-bottom: 1px solid var(--very-dark-blueL);
+    margin: 0.5rem 0;
+}
+
+
+
+.profile {
     display: flex;
     background: none;
     align-items: center;
@@ -139,21 +153,25 @@ p{
     padding: 10px 0px 0px 0px;
 }
 
-.avatar img{
+.profile__name{
+    color: var(--white);
+}
+
+.profile__name:hover{
+    cursor: pointer;
+    color:var(--cyan)
+}
+
+.profile img{
     max-width: 30px;
     border: solid 1px;
     border-radius: 50%;
     background-color: var(--white);
 }
 
-.avatar p{
+.profile p{
     font-weight: 300;
-    font-size: 15px;
 }
-
-hr {
-    border-bottom: 1px solid var(--very-dark-blueL);
-  }
 
 .attribution{
     font-family: "Outfit";
