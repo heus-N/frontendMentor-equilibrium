@@ -13,11 +13,10 @@
 *{
     margin: 0;
     background-color: var(--very-dark-blueBG);
+    box-sizing: border-box;
 }
 
 main{
-    display: flex;
-    margin-top: 4%;
     width: 100vw;
     height: 100vh;
 }
@@ -37,32 +36,33 @@ p{
 }
 
 .container{
-    background-color: var(--very-dark-blueCBG);
     margin: auto;
-    margin-top: 5%;
-    max-width: 300px;
+    margin-top: 10%;
+    background-color: var(--very-dark-blueCBG);
+    max-width: 350px;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0px 15px 3px 15px rgba(1, 1, 17, 0.1);  
+
 }
 
 /* CONTEUDO .card COM FUNDO EM CYAN PARA APARECER EM EFEITO DE HOVER. A IMAGEM GANHA OPACIDADE MOSTRANDO O FUNDO EM CYAN */
 .card{
     background: cyan;
     border-radius: 10px;
-    max-width: 299px;
-    max-height: 299px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .card__img{
     position: relative;
-    max-width: 300px;
-    border-radius: 10px;
+    max-width: 350px;
+    border-radius: 8px;
     cursor: pointer;
     z-index: 2;
+    position: relative;
+    overflow: hidden;
 }
 
 .card__img:hover{
@@ -78,7 +78,7 @@ p{
 
 .content{
     background: none;
-    padding: 10px 0px 10px 0px;
+    margin: 1.75rem 0;
 }
 
 .content__name{
@@ -95,8 +95,7 @@ p{
     color: var(--soft-blue);
     font-size: 18px;
     font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin: 1.5rem 0;
 }
 
 .nft_data{
@@ -104,7 +103,7 @@ p{
     justify-content: space-between;
     align-items: center;
     background: none;
-    padding: 0px 0px 10px 0px;
+    padding-bottom: 1.25rem;
     font-weight: 300;
     font-size: 13px;
 }
@@ -139,18 +138,18 @@ p{
 }
 
 hr {
-    border-bottom: 1px solid var(--very-dark-blueL);
-    margin: 0.5rem 0;
+    opacity: 0.2;
+    height: 1px;
+    border: none;
+    background-color: var(--white);
 }
-
-
 
 .profile {
     display: flex;
     background: none;
     align-items: center;
     gap: 5px;
-    padding: 10px 0px 0px 0px;
+    padding-top: 1rem;
 }
 
 .profile__name{
